@@ -1,4 +1,6 @@
-# Stock Algorithm Using Zipline
+# Stock Algorithm Using Zipline (unfinished)
+
+
 
 Create a few basic trading algorithms using zipline. While exploring 
 
