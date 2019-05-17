@@ -1,47 +1,34 @@
-# Stock Algorithm Using Zipline (unfinished)
+# Introduction to Quantitative Finance
+
+This collections of notebooks outlines my exploration of quantitative finance and the tools associated with it.
 
 
+## Tools
 
-Create a few basic trading algorithms using zipline. While exploring 
+To use this notebook you will need a quandl api key which can be obtained for free [here](https://www.quandle.com/)
 
+The class in this notebook pings the quandl API for pricing data on a stock. The class can then process the data using the ARIMA and holt winters models in the statsmodels library. The class also contains methods to visually represent the pricing data via individual moving average plots or a summary including four different moving averages and an autocorrelation plot.
 
-## Project Outline
+Some updates to the code to come will be expanding the number of time series models available and make the plots more interactive.
 
-1. Use Zipline to creat 3-4 base models using base statistics
-    a. Algorythm that rebalences weekly (long / short)
-    b. Algorythm that rebalences daily  (long /short)
-    c. Algorythm that buuys based on moving averges (long)
-    d. TBD
+libraries needed for use:
+    - statsmodel
+    - Pandas
+    - Matplotlib
+    - Seaborn
+ 
 
+## Research
 
-2. Ideas to imporve efficency of model by creating a model that masks the bucket of equitites to chose from when rebalencing
-    - Nueral Networks (RNN)
-    - Try to involve an ARIMA model (not sure yet)
-    - Linear Regression
-    - Unsupervised clustering base on fundamentals
-    - NLP of news articles 
+To use the notebooks in the next two folder you will need a quantopian account you can obtain for free [here](https://www.quantopian.com/home)
 
+In these notebooks it shows how to access information on individual securities as well as create a filters to then use a signals to trade using their pipeline feature. Within the pipeline you can combine features and filters to the pool of securities to create a custom signal for trading. 
 
-
-## Data Details
-
-Suggested backtesting rules of thumb models daily trading 1 year for every feature used in model, as much as you can for monthly trading
-
-As much as you can for monthly trading models
-
-Technical - Open, close, volume, high, low and price for each day for 3,000 stocks Date Ranges (1/1/1992 - 1/1/2018)
-
-Fundamental - SEC earnigns reports from there website on the list of 3,000
-
-Sentiment - create a sentiment funciton that further infuences statistics (Sentdex)
+It provides easy to use illustrations of your test signal including calculations of beta and alpha that can be visually represented through the alphalens tool. tests for alpha and beta over different time period. It allows you too easily manipulate and test your strategies before building out something executable.  
 
 
-#### Workflow
+## Algorithms
 
-1. Get hardcopy of data from Quandl API and list of SID's in file (tonight)
-2. Build the simple models with (deadline Tuesday 5/7)
-3. Look into getting fundamentals from either (deadline Thursday 5/9):
-    - Robin Hood API
-    - SEC website scrape per RNN lecture
-4. Explore Models and improvements via screeeners listed above (deadline Monday 5/13)
-5. Work on visualizations / conclusions / presentation  (deadline in class Thursday 5/15)
+These notebooks should be specifically ran in the quantopian algorithm environment. There they can be backtested, added to, and manipulated at your discretion. 
+
+These strategies are fully executable through their platform. They provide examples common technical trading signals like momentum factor effect and mean reversion effect. The strategies are rather simple and are meant to showcase how the platform executes trades and passes along information within the environment. Tutorial with step by step walkthrough on how to use the platform can be found [here](https://www.quantopian.com/tutorials)
