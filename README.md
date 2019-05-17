@@ -9,7 +9,7 @@ The class in this notebook pings the quandl API for pricing data on a stock. The
 
 Some updates to the code to come will be expanding the number of time series models available and make the plots more interactive.
 
-libraries needed for use:
+Libraries needed for use:
 
     -Statsmodels
     -Pandas
@@ -34,4 +34,7 @@ These strategies are fully executable through their platform. They provide examp
 Tutorial with step by step walkthrough on how to use the platform can be found [here](https://www.quantopian.com/tutorials)
 
 You can obtain a quantopian account for free [here](https://www.quantopian.com/home)
+
+
+[Slide Deck](https://docs.google.com/presentation/d/1vmQ3OYd8SiEUR8yr_-GTPBHBA9AgDjaaYGjMFZ0M0mA/edit?usp=sharing)
 
